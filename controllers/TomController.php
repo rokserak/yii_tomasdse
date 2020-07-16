@@ -4,11 +4,17 @@ namespace app\controllers;
 
 use app\models\Tom_project;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
 
 class TomController extends Controller
 {
     public function actionIndex($id = 1)
     {
+        // validate $id, on error throw 404
+        if (!is_numeric($id) || !Tom_project::findOne($id))
+        {
+            throw new NotFoundHttpException("Project with id '$id' doesn't exist");
+        }
         // get all projects to display in menu
         $projects = Tom_project::find()->all();
 
