@@ -1,11 +1,14 @@
 <?php
 use yii\helpers\Html;
 use yii\helpers\Url;
+
+// set locale language to Slovenian
+Yii::$app->language = 'sl-SI';
 ?>
 
     <div class="row">
         <div class="col-sm-12 col-md-2 col-lg-2">
-            <h3>Menu</h3>
+            <h3><?= Yii::t('tom', 'Menu'); ?></h3>
             <ul>
                 <?php foreach ($projects as $project): ?>
                     <li class="list-unstyled">
@@ -21,19 +24,20 @@ use yii\helpers\Url;
 
             <?php if ($min_score < 100): ?>
                 <div class="alert alert-warning" role="alert">
-                    Project is not done yet!
+                    <?= Yii::t('tom', 'Project is not done yet!') ?>
                 </div>
             <?php else: ?>
                 <div class="alert alert-success" role="alert">
-                    Project is done!
+                    <?= Yii::t('tom', 'Project is done!') ?>
                 </div>
             <?php endif; ?>
+
+            <h3><?= Yii::t('tom', 'Tasks') ?></h3>
 
             <ol>
                 <?php foreach ($tasks as $task): ?>
                     <li class="list-unstyled">
                         <?= Html::encode($task->task_name) ?>:
-                        <?= Html::encode($task->percent_done) ?>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
                                  role="progressbar" style="width: <?= Html::encode($task->percent_done) ?>%"
@@ -45,7 +49,11 @@ use yii\helpers\Url;
             </ol>
 
         </div>
-        <div class="col-sm-12 col-md-2 col-lg-2 text-center">
-            Third column
+        <div class="col-sm-12 col-md-2 col-lg-2">
+            <div class="card">
+                <div class="card-body">
+                    <?= Yii::t('tom', 'Third column') ?>
+                </div>
+            </div>
         </div>
     </div>

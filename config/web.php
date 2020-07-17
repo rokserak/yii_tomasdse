@@ -51,6 +51,17 @@ $config = [
             ],
         ],
         */
+
+        'i18n' => [
+            'translations' => [
+                'tom' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'fileMap' => [
+                        'tom' => 'tom.php',
+                    ],
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];
