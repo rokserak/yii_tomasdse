@@ -1,0 +1,29 @@
+﻿Naloga:
+S pomočjo Yii (http://www.yiiframework.com/) frameworka je potrebno narediti osnovno aplikacijo z naslednjmi značilnostmi:
+-uporabljen mora biti template s tremi stolpci
+-levi stolpec mora vsebovati poljuben meni 
+-tekst mora biti pripravljen na prevod. Prevodov ni potrebno delati.
+-sledite dobrim praksam za arhitekturo MVC (model, view, controler https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+-sledite dobrim praksam frameworka 
+	-https://www.yiiframework.com/doc/guide/2.0/en
+	-https://www.yiiframework.com/doc/guide/2.0/en/start-databases
+	-https://www.yiiframework.com/doc/guide/2.0/en/db-active-record
+	-https://www.yiiframework.com/doc/guide/2.0/en/runtime-routing
+	-https://www.yiiframework.com/doc/guide/2.0/en/helper-overview
+	-https://www.yiiframework.com/doc/guide/2.0/en/helper-html
+	-https://www.yiiframework.com/doc/guide/2.0/en/helper-url
+	-https://en.wikipedia.org/wiki/SQL_injection
+	
+-v srednji stolpec postavite bootstrap komponento "Progress bar" (http://getbootstrap.com/components/#progress)
+-progress bar: % končanosti je enaka % končanega projekta št. 1.  ;; Projekt je končan, ko so končane vse naloge projekta. Naloga je končana, ko je vsota oddanih poročil 100%. (struktura projekta, nalog in poročil v prilogi)
+(baza postgres ali mysql)
+-za preračun % končanosti projekta uporabite SQL. 
+
+Kot rešitev lahko oddate
+ali
+Link do git-a
+ali
+Zip celotnega projekta
+
+
+V kolikor kaj ni jasno ali manjka, si izmislite, uporabite domišlijo.
